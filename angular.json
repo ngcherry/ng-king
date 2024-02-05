@@ -101,6 +101,7 @@
               "buildTarget": "playground:build:development"
             }
           },
+          "options": { "port": 5002 },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
