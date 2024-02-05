@@ -1,6 +1,5 @@
 /*
  * Public API Surface of ng-king
  */
-
-export * from './lib/ng-king.service';
-export * from './lib/ng-king.component';
+export * from './lib/ui/icon/icon.component';
+export * from './lib/ui/icon/icon.registry';
