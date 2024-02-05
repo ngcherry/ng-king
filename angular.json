@@ -6,6 +6,12 @@
     "ng-king": {
       "projectType": "library",
       "root": "projects/ng-king",
+      "schematics": {
+        "@schematics/angular:component": {
+          "changeDetection": "OnPush",
+          "style": "scss"
+        }
+      },
       "sourceRoot": "projects/ng-king/src",
       "prefix": "kn",
       "architect": {
@@ -28,10 +34,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/ng-king/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
