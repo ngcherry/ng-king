@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/ng-king",
       "sourceRoot": "projects/ng-king/src",
-      "prefix": "lib",
+      "prefix": "kn",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
