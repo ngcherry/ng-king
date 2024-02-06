@@ -15,12 +15,11 @@ import {
   Overlay,
   OverlayModule,
 } from '@angular/cdk/overlay';
-import { SelectItemComponent } from './select-item/select-item.component';
 import { Subscription } from 'rxjs';
 import { SelectState } from './select.state';
 
 @Component({
-  selector: 'app-select',
+  selector: 'kn-select',
   standalone: true,
   imports: [OverlayModule],
   templateUrl: './select.component.html',
@@ -28,7 +27,7 @@ import { SelectState } from './select.state';
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [SelectState],
 })
-export class SelectComponent {
+export class KNSelectComponent {
 
   overlay = inject(Overlay);
 

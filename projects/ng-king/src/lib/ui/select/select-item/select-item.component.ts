@@ -12,14 +12,14 @@ import {
 import { SelectState } from '../select.state';
 
 @Component({
-  selector: 'app-select-item',
+  selector: 'kn-select-item',
   standalone: true,
   imports: [],
   templateUrl: './select-item.component.html',
   styleUrl: './select-item.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SelectItemComponent {
+export class KNSelectItemComponent {
 
   private selectState=inject(SelectState);
 
