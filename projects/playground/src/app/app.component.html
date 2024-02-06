@@ -1,3 +1,8 @@
-<kn-checkbox [(ngModel)]="checkboxValue" labelPosition="after"
+<!-- <kn-checkbox [(ngModel)]="checkboxValue" labelPosition="after"
   ><p>I AM CHECKBOX</p></kn-checkbox
->
+> -->
+
+<app-radio-group [(ngModel)]="radioValue">
+  <app-radio-button [value]="1">One</app-radio-button>
+  <app-radio-button [value]="2">Two</app-radio-button>
+</app-radio-group>

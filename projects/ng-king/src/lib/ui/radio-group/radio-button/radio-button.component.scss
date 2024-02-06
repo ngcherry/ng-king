@@ -1,0 +1,9 @@
+:host {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 4px;
+  &.label-before-align {
+    flex-direction: row-reverse;
+  }
+}

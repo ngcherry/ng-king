@@ -60,6 +60,8 @@ export class KNIconComponent {
     effect(() => {
       const path = this._iconRegistry.findPath(this.name());
 
+      console.log(path);
+
       if (path) {
         this._http
           .get(path, {
