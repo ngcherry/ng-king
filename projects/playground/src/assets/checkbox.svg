@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-        <g id="Style-Guide-Desktop-Part-1" transform="translate(-1265.000000, -2300.000000)" fill-rule="nonzero" stroke="currentColor">
-            <g id="Check-box-btn" transform="translate(822.000000, 2190.000000)">
-                <g id="desktop/checkbox/default-copy" transform="translate(444.000000, 111.000000)">
-                    <rect id="Rectangle" x="0" y="0" width="14" height="14" rx="1"></rect>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Z"/></svg>
