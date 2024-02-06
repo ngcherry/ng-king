@@ -8,6 +8,10 @@ import { KNCheckboxComponent } from '../../../ng-king/src/lib/ui/checkbox/checkb
 import { FormsModule } from '@angular/forms';
 import { RadioGroupComponent } from '../../../ng-king/src/lib/ui/radio-group/radio-group.component';
 import { RadioButtonComponent } from '../../../ng-king/src/lib/ui/radio-group/radio-button/radio-button.component';
+import { SelectComponent } from '../../../ng-king/src/lib/ui/select/select.component';
+import { MultiSelectComponent } from '../../../ng-king/src/lib/ui/multi-select/multi-select.component';
+import { SelectItemComponent } from '../../../ng-king/src/lib/ui/select/select-item/select-item.component';
+import { MultiSelectItemComponent } from '../../../ng-king/src/lib/ui/multi-select/multi-select-item/multi-select-item.component';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +23,10 @@ import { RadioButtonComponent } from '../../../ng-king/src/lib/ui/radio-group/ra
     FormsModule,
     RadioGroupComponent,
     RadioButtonComponent,
+    SelectComponent,
+    MultiSelectComponent,
+    SelectItemComponent,
+    MultiSelectItemComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
