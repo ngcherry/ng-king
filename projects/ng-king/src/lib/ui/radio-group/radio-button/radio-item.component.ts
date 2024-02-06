@@ -13,14 +13,14 @@ import { RadioGroupState } from '../radio-group.state';
 import { KNIconComponent } from '../../icon/icon.component';
 
 @Component({
-  selector: 'app-radio-button',
+  selector: 'kn-radio-item',
   standalone: true,
   imports: [KNIconComponent],
-  templateUrl: './radio-button.component.html',
-  styleUrl: './radio-button.component.scss',
+  templateUrl: './radio-item.component.html',
+  styleUrl: './radio-item.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class RadioButtonComponent {
+export class KNRadioItemComponent {
   private radioGroupState = inject(RadioGroupState);
 
   @Input()

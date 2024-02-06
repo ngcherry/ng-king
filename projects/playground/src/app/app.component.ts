@@ -6,8 +6,8 @@ import {
 } from '../../../ng-king/src/public-api';
 import { KNCheckboxComponent } from '../../../ng-king/src/lib/ui/checkbox/checkbox.component';
 import { FormsModule } from '@angular/forms';
-import { RadioGroupComponent } from '../../../ng-king/src/lib/ui/radio-group/radio-group.component';
-import { RadioButtonComponent } from '../../../ng-king/src/lib/ui/radio-group/radio-button/radio-button.component';
+import { KNRadioGroupComponent } from '../../../ng-king/src/lib/ui/radio-group/radio-group.component';
+import { KNRadioItemComponent } from '../../../ng-king/src/lib/ui/radio-group/radio-button/radio-item.component';
 import { SelectComponent } from '../../../ng-king/src/lib/ui/select/select.component';
 import { MultiSelectComponent } from '../../../ng-king/src/lib/ui/multi-select/multi-select.component';
 import { SelectItemComponent } from '../../../ng-king/src/lib/ui/select/select-item/select-item.component';
@@ -21,8 +21,8 @@ import { MultiSelectItemComponent } from '../../../ng-king/src/lib/ui/multi-sele
     KNIconComponent,
     KNCheckboxComponent,
     FormsModule,
-    RadioGroupComponent,
-    RadioButtonComponent,
+    KNRadioGroupComponent,
+    KNRadioItemComponent,
     SelectComponent,
     MultiSelectComponent,
     SelectItemComponent,

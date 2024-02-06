@@ -9,7 +9,7 @@ import { RadioGroupState } from './radio-group.state';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
-  selector: 'app-radio-group',
+  selector: 'kn-radio-group',
   standalone: true,
   imports: [],
   templateUrl: './radio-group.component.html',
@@ -20,11 +20,11 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
     {
       provide: NG_VALUE_ACCESSOR,
       multi: true,
-      useExisting: forwardRef(() => RadioGroupComponent),
+      useExisting: forwardRef(() => KNRadioGroupComponent),
     },
   ],
 })
-export class RadioGroupComponent implements ControlValueAccessor {
+export class KNRadioGroupComponent implements ControlValueAccessor {
   radioGroupState = inject(RadioGroupState);
 
   writeValue(obj: any): void {
