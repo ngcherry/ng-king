@@ -11,6 +11,13 @@ import { KNDualRingSpinnerComponent } from './spinners/dual-ring-spinner/dual-ri
 import { KNFacebookSpinnerComponent } from './spinners/facebook-spinner/facebook-spinner.component';
 import { KNRippleSpinnerComponent } from './spinners/ripple-spinner/ripple-spinner.component';
 import { KNCircleSpinnerComponent } from './spinners/circle-spinner/circle-spinner.component';
+import { KNRollerSpinnerComponent } from './spinners/roller-spinner/roller-spinner.component';
+import { KNHeartSpinnerComponent } from './spinners/heart-spinner/heart-spinner.component';
+import { KNDefaultSpinnerComponent } from './spinners/default-spinner/default-spinner.component';
+import { KNEllipsisSpinnerComponent } from './spinners/ellipsis-spinner/ellipsis-spinner.component';
+import { KNSpinSpinnerComponent } from './spinners/spin-spinner/spin-spinner.component';
+import { KNHourglassSpinnerComponent } from './spinners/hourglass-spinner/hourglass-spinner.component';
+import { KNGridSpinnerComponent } from './spinners/grid-spinner/grid-spinner.component';
 
 @Component({
   selector: 'kn-spinner',
@@ -21,6 +28,13 @@ import { KNCircleSpinnerComponent } from './spinners/circle-spinner/circle-spinn
     KNFacebookSpinnerComponent,
     KNRippleSpinnerComponent,
     KNCircleSpinnerComponent,
+    KNRollerSpinnerComponent,
+    KNHeartSpinnerComponent,
+    KNDefaultSpinnerComponent,
+    KNEllipsisSpinnerComponent,
+    KNSpinSpinnerComponent,
+    KNHourglassSpinnerComponent,
+    KNGridSpinnerComponent,
   ],
   templateUrl: './spinner.component.html',
   styleUrl: './spinner.component.scss',
@@ -38,7 +52,7 @@ export class KNSpinnerComponent {
       return this._options.defaultType;
     }
 
-    return 'ring';
+    return 'default';
   });
 
   private _options = inject(KN_SPINNER_OPTIONS, {
