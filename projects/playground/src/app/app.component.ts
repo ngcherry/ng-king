@@ -5,6 +5,7 @@ import {
   KNIconRegistry,
   KNSelectComponent,
   KNSelectItemComponent,
+  KNSpinnerComponent,
 } from '../../../ng-king/src/public-api';
 import { KNCheckboxComponent } from '../../../ng-king/src/lib/ui/checkbox/checkbox.component';
 import { FormsModule } from '@angular/forms';
@@ -27,6 +28,7 @@ import { MultiSelectItemComponent } from '../../../ng-king/src/lib/ui/multi-sele
     MultiSelectComponent,
     KNSelectItemComponent,
     MultiSelectItemComponent,
+    KNSpinnerComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
