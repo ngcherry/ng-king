@@ -1,0 +1,9 @@
+<label class="kn-field-label" [class.float]="fieldControl.floatLabel()">
+  <ng-content select="kn-label"></ng-content>
+</label>
+<ng-content></ng-content>
+
+@if(showErrors()){ @for (errorKey of errors(); track $index) {
+<kn-error [errorKey]="errorKey"></kn-error>
+
+} }

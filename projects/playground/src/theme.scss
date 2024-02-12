@@ -1,0 +1,40 @@
+:root {
+  --kn-field-height: 42px;
+}
+
+.kn-field {
+  display: inline-flex;
+  position: relative;
+  border: 1px solid rgb(217, 217, 217);
+}
+
+.kn-text-field {
+  input {
+    width: 100%;
+  }
+}
+
+input {
+  background-color: transparent; /* Remove background */
+  border: 0; /* Remove border */
+  outline: none; /* Remove focus outline */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  font-family: inherit; /* Use font from parent */
+  font-size: 100%; /* Use font size from parent */
+  color: inherit; /* Use font color from parent */
+  /* Add any other resets you need */
+}
+
+.kn-field-label {
+  position: absolute;
+  left: 0;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+
+  &.float {
+    pointer-events: all;
+    transform: translateY(-106%) scale(0.75);
+  }
+}
