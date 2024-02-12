@@ -9,3 +9,4 @@ export * from './lib/ui/radio-group/radio-button/radio-item.component';
 export * from './lib/ui/radio-group/radio-group.component';
 export * from './lib/ui/spinner/spinner.component';
 export * from './lib/ui/spinner/spinner-options';
+export * from './lib/ui/button/button.component';

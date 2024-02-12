@@ -1,6 +1,7 @@
 import { Component, effect, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {
+  KNButtonComponent,
   KNIconComponent,
   KNIconRegistry,
   KNSelectComponent,
@@ -29,6 +30,7 @@ import { MultiSelectItemComponent } from '../../../ng-king/src/lib/ui/multi-sele
     KNSelectItemComponent,
     MultiSelectItemComponent,
     KNSpinnerComponent,
+    KNButtonComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
