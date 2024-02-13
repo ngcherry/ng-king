@@ -1,6 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import "@angular/cdk/overlay-prebuilt.css";
 
+button {
+  background: none; /* Removes the default background */
+  color: inherit; /* Inherits the color from the parent element */
+  border: none; /* Removes the border */
+  padding: 0; /* Removes the padding */
+  margin: 0; /* Removes the margin */
+  font: inherit; /* Inherits the font properties from the parent element */
+  cursor: pointer; /* Ensures the cursor changes to a pointer on hover */
+  outline: inherit; /* Removes the default focus outline and inherits from the parent if any */
+}
+
 @import "theme.scss";
 
 html,

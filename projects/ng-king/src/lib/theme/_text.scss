@@ -1,0 +1,19 @@
+@use "./colors";
+
+$text-primary: colors.$gray-100;
+
+$text-secondary: colors.$gray-70;
+
+$text-placeholder: colors.$gray-40;
+
+$text-on-color: colors.$white;
+
+$text-on-color-disabled: colors.$gray-50;
+
+$text-helper: colors.$gray-60;
+
+$text-error: colors.$red-60;
+
+$text-inverse: colors.$white;
+
+$text-disabled: rgba(colors.$gray-100, 0.25);

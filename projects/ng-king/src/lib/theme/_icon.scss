@@ -1,0 +1,15 @@
+@use "./colors";
+
+$icon-primary: colors.$gray-100;
+
+$icon-secondary: colors.$gray-70;
+
+$icon-on-color: colors.$white;
+
+$icon-on-color-disabled: colors.$gray-50;
+
+$icon-interactive: colors.$blue-60;
+
+$icon-inverse: colors.$white;
+
+$icon-disabled: rgba(colors.$gray-100, 0.25);

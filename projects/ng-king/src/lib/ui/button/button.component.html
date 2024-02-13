@@ -1,12 +1,5 @@
 @if(loading()){
 <kn-spinner class="spinner"></kn-spinner>
 } @else{
-<button
-  [attr.disabled]="disabled()"
-  class="kn-button-inner"
-  [attr.type]="type()"
-  [ngClass]="'kn-button-' + color()"
->
-  <ng-content></ng-content>
-</button>
+<ng-content></ng-content>
 }
