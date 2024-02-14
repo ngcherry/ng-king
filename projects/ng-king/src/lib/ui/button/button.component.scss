@@ -1,28 +1,3 @@
-@use "../../theme/colors";
-@use "../../theme/text";
-@use "../../theme/focus";
-@use "../../theme/icon";
-
-$button-primary: colors.$blue-60;
-$button-primary-hover: colors.$blue-60-hover;
-$button-primary-active: colors.$blue-80;
-
-$button-secondary: colors.$gray-80;
-$button-secondary-hover: colors.$gray-80-hover;
-$button-secondary-active: colors.$gray-60;
-
-$button-tertiary: colors.$blue-60;
-$button-tertiary-hover: colors.$blue-60-hover;
-$button-tertiary-active: colors.$blue-80;
-
-$button-danger-primary: colors.$red-60;
-$button-danger-secondary: colors.$red-60;
-$button-danger-hover: colors.$red-60-hover;
-$button-danger-active: colors.$red-80;
-
-$button-separator: colors.$gray-20;
-$button-disabled: colors.$gray-30;
-
 .spinner {
   transform: scale(0.4);
 }
@@ -30,6 +5,7 @@ $button-disabled: colors.$gray-30;
 .cds-button {
   font-size: 0.875rem;
   text-align: left;
+  color: var(--cn-text-on-color);
 
   padding-left: 1rem;
   padding-right: 4rem;
@@ -56,24 +32,23 @@ $button-disabled: colors.$gray-30;
   }
 
   &.cds-button-primary {
-    color: text.$text-on-color;
-    background: $button-primary;
+    background: var(--cn-button-primary);
 
     &:hover {
-      background: $button-primary-hover;
+      background: var(--cn-button-primary-hover);
     }
 
     &:active {
-      background: $button-primary-active;
+      background: var(--cn-button-primary-active);
     }
 
     &:focus {
-      border: 1px solid focus.$focus;
+      border: 1px solid var(--cn-focus);
     }
 
     &:disabled {
-      background: $button-disabled;
-      color: text.$text-on-color-disabled;
+      background: var(--cn-button-disabled);
+      color: var(--cn-text-on-color-disabled);
     }
   }
 }

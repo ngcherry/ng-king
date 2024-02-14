@@ -1,15 +1,9 @@
-@use "./colors";
-
-$icon-primary: colors.$gray-100;
-
-$icon-secondary: colors.$gray-70;
-
-$icon-on-color: colors.$white;
-
-$icon-on-color-disabled: colors.$gray-50;
-
-$icon-interactive: colors.$blue-60;
-
-$icon-inverse: colors.$white;
-
-$icon-disabled: rgba(colors.$gray-100, 0.25);
+:root.cn-theme-white {
+  --cn-icon-primary: #161616;
+  --cn-icon-secondary: #525252;
+  --cn-icon-on-color: #fff;
+  --cn-icon-inverse: #fff;
+  --cn-icon-on-color-disabled: #8d8d8d;
+  --cn-icon-disabled: rgba(#161616, 0.25);
+  --cn-icon-interactive: #0f62fe;
+}

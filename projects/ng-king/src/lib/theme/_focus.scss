@@ -1,7 +1,5 @@
-@use "./colors";
-
-$focus: colors.$blue-60;
-
-$focus-inset: colors.$white;
-
-$focus-inverse: colors.$white;
+:root.cn-theme-white{
+  --cn-focus: #0f62fe;
+  --cn-focus-inset: #fff;
+  --cn-focus-inverse: #fff;
+}

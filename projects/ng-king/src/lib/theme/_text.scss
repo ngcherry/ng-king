@@ -1,19 +1,11 @@
-@use "./colors";
-
-$text-primary: colors.$gray-100;
-
-$text-secondary: colors.$gray-70;
-
-$text-placeholder: colors.$gray-40;
-
-$text-on-color: colors.$white;
-
-$text-on-color-disabled: colors.$gray-50;
-
-$text-helper: colors.$gray-60;
-
-$text-error: colors.$red-60;
-
-$text-inverse: colors.$white;
-
-$text-disabled: rgba(colors.$gray-100, 0.25);
+:root.cn-theme-white{
+  --cn-text-primary: #161616;
+  --cn-text-secondary: #525252;
+  --cn-text-placeholder: #a8a8a8;
+  --cn-text-on-color: #fff;
+  --cn-text-helper: #6f6f6f;
+  --cn-text-error: #da1e28;
+  --cn-text-inverse: #fff;
+  --cn-text-disabled: rgba(#161616, 0.25);
+  --cn-text-on-color-disabled: #8d8d8d; 
+}

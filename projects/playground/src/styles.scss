@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "@angular/cdk/overlay-prebuilt.css";
+@import "../../ng-king/src/lib/theme/theme.scss";
 
 button {
   background: none; /* Removes the default background */
