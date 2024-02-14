@@ -2,7 +2,7 @@ import { Component, effect, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {
   KNButtonComponent,
-  KNIconComponent,
+  CNIconComponent,
   KNIconRegistry,
   KNSelectComponent,
   KNSelectItemComponent,
@@ -29,7 +29,7 @@ import { KNErrorMappingService } from '../../../ng-king/src/lib/ui/field/error-m
   standalone: true,
   imports: [
     RouterOutlet,
-    KNIconComponent,
+    CNIconComponent,
     KNCheckboxComponent,
     FormsModule,
     KNRadioGroupComponent,

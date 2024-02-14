@@ -12,8 +12,10 @@ import {
 import { KNIconRegistry } from './icon.registry';
 import { DOCUMENT } from '@angular/common';
 
+type ICON_SIZES = 16 | 20 | 24 | 32;
+
 @Component({
-  selector: 'kn-icon',
+  selector: 'cn-icon',
   standalone: true,
   host: {
     'aria-hidden': 'true',
@@ -30,7 +32,7 @@ import { DOCUMENT } from '@angular/common';
   template: '',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class KNIconComponent {
+export class CNIconComponent {
   private _http = inject(HttpClient);
   private _iconRegistry = inject(KNIconRegistry);
   private _renderer2 = inject(Renderer2);
@@ -42,11 +44,23 @@ export class KNIconComponent {
   @HostBinding('class.scale')
   scale = input(false);
 
+  @HostBinding('style.width.px')
+  get iconWidth() {
+    return this.size();
+  }
+
+  @HostBinding('style.height.px')
+  get iconHeight() {
+    return this.size();
+  }
+
   scaleIcon = input<boolean>(true);
 
   ariaLabel = input<string>();
 
   name = input.required<string>();
+
+  size = input<ICON_SIZES>(16);
 
   private _elementRef = inject<ElementRef<HTMLElement>>(
     ElementRef<HTMLElement>
@@ -58,9 +72,7 @@ export class KNIconComponent {
 
   constructor() {
     effect(() => {
-      const path = this._iconRegistry.findPath(this.name());
-
-      console.log(path);
+      const path = `/assets/carbon-icons/${this.name()}.svg`;
 
       if (path) {
         this._http

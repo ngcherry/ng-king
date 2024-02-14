@@ -1,6 +1,8 @@
-<button cds-button size="2xl" color="primary">I AM BUTTON</button>
+<!-- <button cds-button size="2xl" color="primary">I AM BUTTON</button>
 
-<kn-field>
-  <kn-label>HELLLOoo</kn-label>
-  <kn-text-field [formControl]="contr"></kn-text-field>
-</kn-field>
+<cn-icon name="add"></cn-icon> -->
+
+<kn-radio-group [(ngModel)]="radioValue">
+  <kn-radio-item [value]="1">Value 1</kn-radio-item>
+  <kn-radio-item [value]="2">Value 2</kn-radio-item>
+</kn-radio-group>

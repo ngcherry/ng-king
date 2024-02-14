@@ -10,12 +10,12 @@ import {
   input,
 } from '@angular/core';
 import { RadioGroupState } from '../radio-group.state';
-import { KNIconComponent } from '../../icon/icon.component';
+import { CNIconComponent } from '../../icon/icon.component';
 
 @Component({
   selector: 'kn-radio-item',
   standalone: true,
-  imports: [KNIconComponent],
+  imports: [CNIconComponent],
   templateUrl: './radio-item.component.html',
   styleUrl: './radio-item.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -62,7 +62,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/playground/src/favicon.ico",
-              "projects/playground/src/assets"
+              "projects/playground/src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/@carbon/icons/svg/32",
+                "output": "./assets/carbon-icons"
+              }
             ],
             "styles": ["projects/playground/src/styles.scss"],
             "scripts": []

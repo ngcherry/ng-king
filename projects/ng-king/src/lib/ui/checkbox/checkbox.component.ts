@@ -9,13 +9,13 @@ import {
   input,
   signal,
 } from '@angular/core';
-import { KNIconComponent } from '../icon/icon.component';
+import { CNIconComponent } from '../icon/icon.component';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 @Component({
   selector: 'kn-checkbox',
   standalone: true,
-  imports: [KNIconComponent],
+  imports: [CNIconComponent],
   templateUrl: './checkbox.component.html',
   styleUrl: './checkbox.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
